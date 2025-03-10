@@ -1,7 +1,8 @@
-baseURL = "https://nqvinh00.github.io"
+baseURL = "https://nqvinh00.github.io/myprofile/"
 languageCode = "en-us"
 title = "nqvinh00 - My profile"
 theme = "hugo-profile"
+canonifyURLs = true
 Paginate = 3
 enableRobotsTXT = true
 
