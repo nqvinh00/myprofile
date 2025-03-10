@@ -1,0 +1,251 @@
+baseURL = "https://hugo-profile.netlify.app"
+languageCode = "en-us"
+title = "nqvinh00 - My profile"
+theme = "hugo-profile"
+Paginate = 3
+enableRobotsTXT = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+page = [ "HTML", "RSS" ]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+title = "nqvinh00 - My profile"
+description = "About me"
+favicon = "/favicon.ico"
+useBootstrapCDN = false
+mathjax = false
+animate = true
+
+  [params.font]
+  fontSize = "1rem"
+  fontWeight = 400
+  lineHeight = 1.5
+  textAlign = "left"
+
+  [params.navbar]
+  align = "ms-auto"
+  brandName = "nqvinh00"
+  disableSearch = false
+  enableSeparator = false
+
+    [params.navbar.stickyNavBar]
+    enable = true
+    showOnScrollUp = true
+
+    [params.navbar.menus]
+    disableAbout = false
+    disableExperience = false
+    disableEducation = false
+    disableProjects = false
+    disableAchievements = true
+    disableContact = false
+
+  [params.hero]
+  enable = true
+  intro = "Hi, my name is"
+  title = "Vinh."
+  subtitle = "Code, Create and Innovate."
+  content = "A passionate software engineer. I enjoy coffee, comics, and games as my favorite pastimes."
+  image = "/me.jpeg"
+
+    [params.hero.bottomImage]
+    enable = true
+
+    [params.hero.button]
+    enable = true
+    name = "Resume"
+    url = "/resume.pdf"
+    download = true
+    newPage = false
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-github"
+url = "https://github.com/nqvinh00"
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-linkedin"
+url = "https://www.linkedin.com/in/nqvinh00/"
+
+  [params.about]
+  enable = true
+  title = "About Me"
+  image = "/me1.jpg"
+  content = """
+I am a young and passionate software engineer with a strong foundation in computer science, computer engineering, and mathematics. 
+
+I thrive on solving complex problems and building efficient, scalable systems. My expertise spans backend development, system optimization, and cloud integration. I enjoy turning ideas into reliable solutions that deliver value, continuously learning and adopting modern technologies to stay at the forefront of innovation."""
+
+    [params.about.skills]
+    enable = true
+    title = "Here are a few technologies I've been working with recently:"
+    items = [ "Go", "Java", "Python", "Docker", "Kubernetes", "Redis", "MySQL", "AWS" ]
+
+  [params.experience]
+  enable = true
+
+    [[params.experience.items]]
+    job = "Backend Developer"
+    company = "Smilegate Vietnam"
+    companyUrl = "https://smilegatevn.com/en/"
+    date = "Jun 2024 - present"
+    content = """
+I am currently working as a backend developer at [Smilegate VN](https://smilegatevn.com/en/) in Ho Chi Minh City, Vietnam. 
+    
+I am working on a project that support streaming games between PC and mobile using WebRTC, Go, MySQL and Redis. 
+- The project is an application that allows users to stream their games from PC to mobile and play games on the go. 
+- It uses WebRTC to handle the video streaming and Go to handle the server-side logic. The project also uses MySQL as the database to store user information and game sessions."""
+
+      [params.experience.items.featuredLink]
+      enable = true
+      name = "View the project"
+      url = "https://stovelink.onstove.com/"
+
+    [[params.experience.items]]
+    job = "Software Engineer"
+    company = "Datanest"
+    companyUrl = "https://datanest.vn/"
+    date = "Aug 2020 - Jun 2024"
+    content = """
+I worked for Datanest as an DevOps/Software Engineer internship for about one year. 
+- Developed microservices for credit scoring and internal tools.
+- Gained expertise in Grafana, Prometheus, Loki, and CI/CD.
+- Contributed to Grafana dashboard automation and conducted code reviews.
+
+After that, I worked as a full-time Software Engineer for about two years.
+- Built and maintained backend microservices using Go, MySQL, PostgreSQL, Redis, and Kafka.
+- Developed SMS anti-spam, user tracking, and file encryption tools.
+- Managed CI/CD pipelines and service monitoring with GitHub Actions, Prometheus, and Grafana.
+- Contributed to [Tinvay](https://tinvay.finzone.vn) (loan processing) and [Finzone](https://finzone.vn) (financial services) projects.
+- Led documentation site migration and supported FIs & Telcos integration.
+    """
+
+      [params.experience.items.featuredLink]
+      enable = true
+      name = "View the project"
+      url = "https://finzone.vn/"
+
+  [params.education]
+  enable = true
+  index = false
+
+    [[params.education.items]]
+    title = "Bachelor of Engineering in Computer Engineering"
+    date = "2018 - 2022"
+    GPA = "3.29/4"
+    content = """
+    """
+
+      [params.education.items.school]
+      name = "Vietnam National University - University of Engineering and Technology"
+      url = "https://uet.vnu.edu.vn/en/"
+
+
+  [params.achievements]
+  enable = false
+
+    [[params.achievements.items]]
+    title = "Google Summer of Code"
+    content = "Contributed to a open source project."
+    url = "https://example.com"
+
+  [params.projects]
+  enable = true
+
+    [[params.projects.items]]
+    title = "mls"
+    content = "A command-line tool like `ls`, designed to list and manage files with enhanced features such as colorized output, file type icons, and sorting options. It is cross-platform and supports both Unix and Windows systems."
+    image = "/mls.png"
+    badges = [ "Go" ]
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/nqvinh00/mls"
+
+    [[params.projects.items]]
+    title = "Comic Downloader"
+    content = "Collaborated on a team project to create a messenger clone using Kotlin and Firebase."
+    image = "/comic.webp"
+    badges = [ "Python" ]
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/nqvinh00/ComicDownloader"
+
+    [[params.projects.items]]
+    title = "Chat-app"
+    content = "Collaborated on a team project to create a messenger clone using Kotlin and Firebase."
+    image = "/chatapp.jpg"
+    badges = [ "Kotlin", "Firebase" ]
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/nqvinh00/Chat-app"
+
+    [[params.projects.items]]
+    title = "Communication in IoT Indoor Positioning System"
+    content = "Developed asystem ot calculate current position based on communication from a set of BLE devices, implemented using Python."
+    image = "/ble.jpg"
+    badges = [ "Python", "BLE", "Adrunio", "NRF24L01" ]
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/nqvinh00/bleScanAndDistanceCalculation"
+
+    [[params.projects.items]]
+    title = "Reyolo"
+    content = "Reimplemented the YOLOv3 detection algorithm using Python and PyTorch Lightning."
+    image = "/reyolo.png"
+    badges = [ "Python", "PyTorch" ]
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/nqvinh00/reyolo"
+
+  [params.contact]
+  enable = true
+  content = "My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!"
+  btnName = "Mail me"
+  btnLink = "mailto:nqvinh00@gmail.com"
+
+[params.footer.recentPosts]
+path = "blogs"
+count = 3
+title = "Recent Posts"
+enable = false
+disableFeaturedImage = false
+
+[params.footer.socialNetworks]
+github = "https://github.com"
+linkedin = "https://linkedin.com"
+
+  [params.listPages]
+  disableFeaturedImage = false
+
+  [params.singlePages]
+  socialShare = true
+
+    [params.singlePages.readTime]
+    enable = true
+    content = "min read"
+
+    [params.singlePages.scrollprogress]
+    enable = true
+
+    [params.singlePages.tags]
+    openInNewTab = true
+
+  [params.terms]
+  read = "Read"
+  toc = "Table Of Contents"
+  copyright = "All rights reserved"
+  pageNotFound = "Page not found"
+  emailText = "Check out this site"
+
+  [params.datesFormat]
+  article = "Jan 2, 2006"
+  articleList = "Jan 2, 2006"
+  articleRecent = "Jan 2, 2006"
