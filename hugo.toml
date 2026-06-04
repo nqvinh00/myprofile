@@ -50,7 +50,7 @@ animate = true
   intro = "Hi, my name is"
   title = "Vinh."
   subtitle = "Code, Create and Innovate."
-  content = "Experienced backend engineer with 5 years of building scalable, reliable systems using Go, MySQL, and Redis. Strong at solving problems, improving performance and delivering real impact."
+  content = "A passionate software engineer. I enjoy coffee, comics, and games as my favorite pastimes."
   image = "/me.jpeg"
 
     [params.hero.bottomImage]
@@ -59,7 +59,7 @@ animate = true
     [params.hero.button]
     enable = true
     name = "Resume"
-    url = "/resume.pdf"
+    url = "/cv.pdf"
     download = false
     newPage = true
 
@@ -101,9 +101,14 @@ Currently working as a full-time Software Engineer at Axon.
     companyUrl = "https://www.axon.com/"
     date = "Aug 2025 - Dec 2025"
     content = """
-Project: RIPA Stop Form — same project as above, initially onboarded as a contractor.
-- Built form structure and validation logic.
-- Contributed to workflows through standups, planning, and code reviews.
+Project: RIPA Stop Form — a system for law enforcement enabling structured data capture, validation and verification (V&V), batch submissions to the State Department of Justice, analytics support, and secure data retention.
+
+Tech stack: Go, TypeScript, C#, MySQL
+- Implemented form structure and rule-based validation.
+- Designed secure data storage and retention mechanisms aligned with regulatory policies.
+- Enhanced desktop and mobile app UI/UX to support RIPA form.
+- Wrote unit tests and end-to-end tests.
+- Worked cross-functionally with product, QA and design teams.
     """
 
     [[params.experience.items]]
@@ -257,7 +262,6 @@ DevOps:
     [[params.projects.items]]
     title = "ColorScheme"
     content = "A full-stack web app for creating, previewing, and sharing terminal color schemes. Built with React, TypeScript, and Tailwind CSS on the frontend and Go (Gin) on the backend."
-    image = ""
     badges = [ "Go", "TypeScript", "React", "PostgreSQL" ]
 
       [[params.projects.items.links]]
