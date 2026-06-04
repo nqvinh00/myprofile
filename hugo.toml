@@ -76,7 +76,7 @@ url = "https://www.linkedin.com/in/nqvinh00/"
   title = "About Me"
   image = "/me1.jpg"
   content = """
-Experienced backend engineer with 5 years of building scalable, reliable systems using Go, MySQL, and Redis. Strong at solving problems, improving performance, and working closely with teams to deliver real impact. Always learning, always aiming to build clean, efficient software that supports business goals."""
+Experienced backend engineer building scalable, reliable systems using Go, MySQL, and Redis. Strong at solving problems, improving performance, and working closely with teams to deliver real impact. Always learning, always aiming to build clean, efficient software that supports business goals."""
 
     [params.about.skills]
     enable = true
