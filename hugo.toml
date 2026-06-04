@@ -50,7 +50,7 @@ animate = true
   intro = "Hi, my name is"
   title = "Vinh."
   subtitle = "Code, Create and Innovate."
-  content = "A passionate software engineer. I enjoy coffee, comics, and games as my favorite pastimes."
+  content = "Experienced backend engineer with 5 years of building scalable, reliable systems using Go, MySQL, and Redis. Strong at solving problems, improving performance and delivering real impact."
   image = "/me.jpeg"
 
     [params.hero.bottomImage]
@@ -76,29 +76,53 @@ url = "https://www.linkedin.com/in/nqvinh00/"
   title = "About Me"
   image = "/me1.jpg"
   content = """
-I am a young and passionate software engineer with a strong foundation in computer science, computer engineering, and mathematics. 
-
-I thrive on solving complex problems and building efficient, scalable systems. My expertise spans backend development, system optimization, and cloud integration. I enjoy turning ideas into reliable solutions that deliver value, continuously learning and adopting modern technologies to stay at the forefront of innovation."""
+Experienced backend engineer with 5 years of building scalable, reliable systems using Go, MySQL, and Redis. Strong at solving problems, improving performance, and working closely with teams to deliver real impact. Always learning, always aiming to build clean, efficient software that supports business goals."""
 
     [params.about.skills]
     enable = true
     title = "Here are a few technologies I've been working with recently:"
-    items = [ "Go", "Java", "Python", "Docker", "Kubernetes", "Redis", "MySQL", "AWS" ]
+    items = [ "Go", "MySQL", "Docker", "PostgreSQL", "Git", "Redis", "Python", "Kafka" ]
 
   [params.experience]
   enable = true
 
     [[params.experience.items]]
+    job = "Software Engineer"
+    company = "Axon"
+    companyUrl = "https://www.axon.com/"
+    date = "Mar 2026 - present"
+    content = """
+Currently working as a full-time Software Engineer at Axon.
+    """
+
+    [[params.experience.items]]
+    job = "Software Engineer Contractor"
+    company = "Axon"
+    companyUrl = "https://www.axon.com/"
+    date = "Aug 2025 - Dec 2025"
+    content = """
+Project: RIPA Stop Form — same project as above, initially onboarded as a contractor.
+- Built form structure and validation logic.
+- Contributed to workflows through standups, planning, and code reviews.
+    """
+
+    [[params.experience.items]]
     job = "Backend Developer"
     company = "Smilegate Vietnam"
     companyUrl = "https://smilegatevn.com/en/"
-    date = "Jun 2024 - present"
+    date = "Jun 2024 - Jun 2025"
     content = """
-I am currently working as a backend developer at [Smilegate VN](https://smilegatevn.com/en/) in Ho Chi Minh City, Vietnam. 
-    
-I am working on a project that support streaming games between PC and mobile using WebRTC, Go, MySQL and Redis. 
-- The project is an application that allows users to stream their games from PC to mobile and play games on the go. 
-- It uses WebRTC to handle the video streaming and Go to handle the server-side logic. The project also uses MySQL as the database to store user information and game sessions."""
+Project: [StoveLink](https://stovelink.onstove.com/) — a PC-to-mobile game streaming platform for low-latency game streaming.
+
+Tech stack: Go, Java, MySQL, Redis, AWS, OCI, gRPC, Spring Boot, MongoDB
+- Built and maintained core backend services in Go with a focus on performance and scalability.
+- Designed custom load balancing and a fault-tolerant Redis Cluster for low-latency data access.
+- Integrated gRPC for fast microservice communication.
+- Enhanced forked open-source tools (coturn for TURN/STUN, Prometheus C client for observability).
+- Developed Spring Boot services for gameplay notifications and dynamic game list management.
+- Implemented real-time game remote control from mobile to PC.
+- Collaborated with SDK, QA, and DevOps teams to ensure stable releases.
+    """
 
       [params.experience.items.featuredLink]
       enable = true
@@ -107,27 +131,51 @@ I am working on a project that support streaming games between PC and mobile usi
 
     [[params.experience.items]]
     job = "Software Engineer"
-    company = "Datanest"
+    company = "Data Nest"
     companyUrl = "https://datanest.vn/"
-    date = "Aug 2020 - Jun 2024"
+    date = "Aug 2021 - Jun 2024"
     content = """
-I worked for Datanest as an DevOps/Software Engineer internship for about one year. 
-- Developed microservices for credit scoring and internal tools.
-- Gained expertise in Grafana, Prometheus, Loki, and CI/CD.
-- Contributed to Grafana dashboard automation and conducted code reviews.
+**Project: Scoring and Lead Generator**
+Credit scoring and fraud detection system. Built microservices for customer profiling and loan lead generation. Tech stack: Go, gRPC, MySQL, Redis, ClickHouse, Kafka, Docker.
 
-After that, I worked as a full-time Software Engineer for about two years.
+**Project: Secure File Transfer Tool**
+Web-based tool for local file encryption/decryption before server upload/download. Tech stack: Go, Gin, NextJS, HDFS.
+
+**Project: [Tinvay](https://tinvay.finzone.vn)**
+Loan application platform that collects, enriches, and forwards customer profiles to banks. Tech stack: Go, Gin, PostgreSQL, Redis, TypeScript.
+
+**Project: [Finzone](https://finzone.vn)**
+Personal finance information platform connecting users with financial services. Tech stack: Go, Gin, MySQL, Redis, TypeScript.
+
 - Built and maintained backend microservices using Go, MySQL, PostgreSQL, Redis, and Kafka.
 - Developed SMS anti-spam, user tracking, and file encryption tools.
+- Integrated external services for data enrichment and customer verification.
+- Built scalable backend APIs for product listings, lead submissions, and anti-spam features.
 - Managed CI/CD pipelines and service monitoring with GitHub Actions, Prometheus, and Grafana.
-- Contributed to [Tinvay](https://tinvay.finzone.vn) (loan processing) and [Finzone](https://finzone.vn) (financial services) projects.
-- Led documentation site migration and supported FIs & Telcos integration.
+- Led documentation site migration from Slate to Hugo.
+- Supported FIs & Telcos integration.
     """
 
       [params.experience.items.featuredLink]
       enable = true
       name = "View the project"
       url = "https://finzone.vn/"
+
+    [[params.experience.items]]
+    job = "Software Engineer / DevOps Intern"
+    company = "Data Nest"
+    companyUrl = "https://datanest.vn/"
+    date = "Aug 2020 - Aug 2021"
+    content = """
+Project: Scoring and Lead Generator
+- Maintained and improved a customer credit scoring system.
+- Developed and supported Go-based microservices and internal tools using Gin.
+- Conducted code reviews and promoted best practices.
+
+DevOps:
+- Contributed to Grafana dashboard panels and alerts as code using Jsonnet and Grafonnet.
+- Gained expertise in Grafana, Prometheus, Loki, Promtail, Drone CI, and GitHub Actions.
+    """
 
   [params.education]
   enable = true
@@ -168,7 +216,7 @@ After that, I worked as a full-time Software Engineer for about two years.
 
     [[params.projects.items]]
     title = "Comic Downloader"
-    content = "Collaborated on a team project to create a messenger clone using Kotlin and Firebase."
+    content = "A Python tool for downloading comics from various online sources for offline reading."
     image = "/comic.webp"
     badges = [ "Python" ]
 
@@ -188,7 +236,7 @@ After that, I worked as a full-time Software Engineer for about two years.
 
     [[params.projects.items]]
     title = "Communication in IoT Indoor Positioning System"
-    content = "Developed asystem ot calculate current position based on communication from a set of BLE devices, implemented using Python."
+    content = "Developed a system to calculate current position based on communication from a set of BLE devices, implemented using Python."
     image = "/ble.jpg"
     badges = [ "Python", "BLE", "Adrunio", "NRF24L01" ]
 
@@ -205,6 +253,16 @@ After that, I worked as a full-time Software Engineer for about two years.
       [[params.projects.items.links]]
       icon = "fab fa-github"
       url = "https://github.com/nqvinh00/reyolo"
+
+    [[params.projects.items]]
+    title = "ColorScheme"
+    content = "A full-stack web app for creating, previewing, and sharing terminal color schemes. Built with React, TypeScript, and Tailwind CSS on the frontend and Go (Gin) on the backend."
+    image = ""
+    badges = [ "Go", "TypeScript", "React", "PostgreSQL" ]
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/nqvinh00/colorscheme"
 
   [params.contact]
   enable = true
