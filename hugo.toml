@@ -76,12 +76,12 @@ url = "https://www.linkedin.com/in/nqvinh00/"
   title = "About Me"
   image = "/me1.jpg"
   content = """
-Experienced backend engineer building scalable, reliable systems using Go, MySQL, and Redis. Strong at solving problems, improving performance, and working closely with teams to deliver real impact. Always learning, always aiming to build clean, efficient software that supports business goals."""
+Software engineer focused on building secure, scalable services with Go, MySQL, Redis, and API development. Works across microservices, performance tuning, and data handling to support reliable delivery, clean system design, and cross-functional collaboration on product and engineering goals."""
 
     [params.about.skills]
     enable = true
     title = "Here are a few technologies I've been working with recently:"
-    items = [ "Go", "MySQL", "Docker", "PostgreSQL", "Git", "Redis", "Python", "Kafka" ]
+    items = [ "Go", "API development", "MySQL", "PostgreSQL", "Redis", "Kafka", "Docker", "Git", "Python" ]
 
   [params.experience]
   enable = true
@@ -92,7 +92,13 @@ Experienced backend engineer building scalable, reliable systems using Go, MySQL
     companyUrl = "https://www.axon.com/"
     date = "Mar 2026 - present"
     content = """
-Currently working as a full-time Software Engineer at Axon.
+Records Management System
+
+- Helped build Axon cloud services to simplify evidence management and support public safety workflows.
+- Built secure, high-volume APIs for complex case files while supporting data privacy, integrity, and compliance across public safety platforms.
+- Built and scaled backend microservices for Axon investigation and case management systems, helping streamline digital evidence workflows for law enforcement agencies.
+- Reviewed user requirements to shape software solutions and draft technical specs.
+- Worked with product managers and engineers to align sprint planning and support technical decisions.
     """
 
     [[params.experience.items]]
@@ -101,14 +107,13 @@ Currently working as a full-time Software Engineer at Axon.
     companyUrl = "https://www.axon.com/"
     date = "Aug 2025 - Dec 2025"
     content = """
-Project: RIPA Stop Form — a system for law enforcement enabling structured data capture, validation and verification (V&V), batch submissions to the State Department of Justice, analytics support, and secure data retention.
+Project: RIPA Stop Form — a system for law enforcement enabling structured data capture, validation and verification (V&V), batch submissions to the State Department of Justice, analytics support, and secure data retention after submission.
 
 Tech stack: Go, TypeScript, C#, MySQL
-- Implemented form structure and rule-based validation.
-- Designed secure data storage and retention mechanisms aligned with regulatory policies.
-- Enhanced desktop and mobile app UI/UX to support RIPA form.
-- Wrote unit tests and end-to-end tests.
-- Worked cross-functionally with product, QA and design teams.
+- Developed form structure and rule-based validation, improving data integrity for law enforcement submissions.
+- Designed secure data storage and retention mechanisms, ensuring compliance with regulatory policies.
+- Improved desktop and mobile app UI/UX for the RIPA form, enhancing user engagement and submission accuracy.
+- Contributed to workflows through standups, planning, and code reviews.
     """
 
     [[params.experience.items]]
@@ -117,16 +122,15 @@ Tech stack: Go, TypeScript, C#, MySQL
     companyUrl = "https://smilegatevn.com/en/"
     date = "Jun 2024 - Jun 2025"
     content = """
-Project: [StoveLink](https://stovelink.onstove.com/) — a PC-to-mobile game streaming platform for low-latency game streaming.
+Project: [StoveLink](https://stovelink.onstove.com/) — a PC-to-mobile game streaming platform that lets users seamlessly stream and play PC games on mobile devices with low-latency performance and cloud-native scalability.
 
-Tech stack: Go, Java, MySQL, Redis, AWS, OCI, gRPC, Spring Boot, MongoDB
-- Built and maintained core backend services in Go with a focus on performance and scalability.
-- Designed custom load balancing and a fault-tolerant Redis Cluster for low-latency data access.
+Tech stack: Go, Java, Mux, MySQL, Redis, AWS, OCI, C, Spring Boot, MongoDB
+- Developed and maintained core backend services in Go, enhancing performance and scalability for game streaming.
+- Engineered custom load balancing and a fault-tolerant Redis Cluster, optimizing data access for low-latency performance.
 - Integrated gRPC for fast microservice communication.
-- Enhanced forked open-source tools (coturn for TURN/STUN, Prometheus C client for observability).
-- Developed Spring Boot services for gameplay notifications and dynamic game list management.
+- Created Spring Boot services for gameplay notifications and dynamic game list management, improving user experience.
 - Implemented real-time game remote control from mobile to PC.
-- Collaborated with SDK, QA, and DevOps teams to ensure stable releases.
+- Enhanced forked open-source tools (coturn for TURN/STUN, Prometheus C client for observability).
     """
 
       [params.experience.items.featuredLink]
@@ -141,24 +145,34 @@ Tech stack: Go, Java, MySQL, Redis, AWS, OCI, gRPC, Spring Boot, MongoDB
     date = "Aug 2021 - Jun 2024"
     content = """
 **Project: Scoring and Lead Generator**
-Credit scoring and fraud detection system. Built microservices for customer profiling and loan lead generation. Tech stack: Go, gRPC, MySQL, Redis, ClickHouse, Kafka, Docker.
+Built SMS anti-spam filters with Go and Redis for secure messaging. Developed SMS redirection and reminder services. Facilitated onboarding integrations with financial and telecom partners to streamline collaboration. Maintained scalable microservices with clean code practices.
 
 **Project: Secure File Transfer Tool**
-Web-based tool for local file encryption/decryption before server upload/download. Tech stack: Go, Gin, NextJS, HDFS.
+Created a web tool for local file encryption and decryption before upload or download to improve data privacy during transfer. Tech stack: Go, Gin, Next.js, HDFS.
+- Designed backend API for file encryption, decryption, and file upload handling.
+- Built frontend interface for file selection and secure operations.
+- Integrated encryption logic and client-server file handling.
 
 **Project: [Tinvay](https://tinvay.finzone.vn)**
-Loan application platform that collects, enriches, and forwards customer profiles to banks. Tech stack: Go, Gin, PostgreSQL, Redis, TypeScript.
+Built a platform that collects loan applications, enriches customer data through scoring and identity verification services, and forwards completed profiles to banks and financial institutions. Tech stack: Go, Gin, PostgreSQL, Redis, TypeScript.
+- Developed backend services for processing and forwarding enriched loan data.
+- Integrated external services for data enrichment and customer verification, enhancing data accuracy.
+- Worked with other teams to maintain data accuracy, reliability, and performance under load.
+- Built a service for tracking user behavior to support the Tinvay analyst team with Go and Kafka.
+- Conducted code reviews and contributed to architectural decisions, ensuring alignment with best practices.
 
 **Project: [Finzone](https://finzone.vn)**
-Personal finance information platform connecting users with financial services. Tech stack: Go, Gin, MySQL, Redis, TypeScript.
+Built a personal finance platform that helps users discover, compare, and access financial services. Tech stack: Go, Gin, MySQL, Redis, TypeScript.
+- Developed scalable backend APIs for product listings, lead submissions, and anti-spam features.
+- Implemented filtering and recommendation logic to match users with relevant offers.
+- Created admin and internal APIs for content and product management.
+- Supported stability through logging, error handling, monitoring, and CI/CD integration.
+- Worked with cross-functional teams to align technical delivery with product goals.
 
-- Built and maintained backend microservices using Go, MySQL, PostgreSQL, Redis, and Kafka.
-- Developed SMS anti-spam, user tracking, and file encryption tools.
-- Integrated external services for data enrichment and customer verification.
-- Built scalable backend APIs for product listings, lead submissions, and anti-spam features.
-- Managed CI/CD pipelines and service monitoring with GitHub Actions, Prometheus, and Grafana.
-- Led documentation site migration from Slate to Hugo.
-- Supported FIs & Telcos integration.
+**DevOps**
+- Managed CI/CD with GitHub Actions.
+- Monitored services with Prometheus, Grafana, and Loki, including code-based dashboards and alerts.
+- Collaborated with cross-functional teams to ensure technology met product goals.
     """
 
       [params.experience.items.featuredLink]
@@ -173,13 +187,17 @@ Personal finance information platform connecting users with financial services. 
     date = "Aug 2020 - Aug 2021"
     content = """
 Project: Scoring and Lead Generator
-- Maintained and improved a customer credit scoring system.
-- Developed and supported Go-based microservices and internal tools using Gin.
-- Conducted code reviews and promoted best practices.
 
-DevOps:
-- Contributed to Grafana dashboard panels and alerts as code using Jsonnet and Grafonnet.
-- Gained expertise in Grafana, Prometheus, Loki, Promtail, Drone CI, and GitHub Actions.
+Tech stack: Go, gRPC, MySQL, Redis, ClickHouse, Kafka, Docker
+- Created a repository for Grafana dashboard panels and alerts as code, utilizing Jsonnet and Grafonnet to streamline monitoring processes.
+- Developed and maintained Go-based microservices and internal tools using the Gin framework to support scalability and performance.
+- Ensured code quality, scalability, and consistency across services.
+- Conducted code reviews and promoted best practices within the team.
+- Enhanced the customer credit scoring system to improve accuracy and reliability in financial service assessments.
+- Calculated creditworthiness and fraud scores for individuals using custom-built scoring models.
+- Built dynamic profiles for each user to evaluate lending potential, tailored to financial institutions' lending criteria.
+- Automatically identified high-potential users and sent personalized loan offer SMS messages to qualified leads.
+- Enabled OTP-validated customer consent for banks and financial institutions to access their data securely.
     """
 
   [params.education]
